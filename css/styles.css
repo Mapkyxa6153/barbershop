@@ -19,11 +19,15 @@ ul {
 a {
   text-decoration: none;
 }
-
+.suptitile-primary,
 .suptitile-secondary {
+  color: var(--text-primary);
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
+}
+
+.suptitile-secondary {
   color: #9da4bd99;
 }
 
@@ -69,7 +73,8 @@ a.nav-link {
   color: #ffffff;
 }
 
-a.nav-link:hover {
+a.nav-link:hover,
+.social-link:hover {
   color: var(--primary-color);
 }
 
@@ -78,4 +83,37 @@ p.section-descriptio {
   font-size: 18px;
   line-height: 30px;
   color: var(--text-primary-lighten);
+}
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
+
+.primary-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+.primary-btn.darken {
+  color: var(--text-primary);
+}
+/* price styles */
+.price-list {
+  display: inline-block;
+}
+.price-item p,
+.price-item span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
 }
