@@ -33,6 +33,19 @@ a {
 .suptitle-secondary {
   color: #9da4bd99;
 }
+.suptitle-primary::before,
+.suptitle-secondary::before {
+  width: 60px;
+  height: 1px;
+  background: #9da4bd99;
+  content: '';
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.suptitle-primary::before {
+  background: rgba(48, 48, 48, 1);
+}
 
 h2.section-title {
   font-family: 'Raleway';
@@ -154,6 +167,7 @@ p.section-description {
 .slider {
   width: calc(100% - 155px);
   background-image: url(../images/slider/Slider\ img\ 3.jpg);
+  background-repeat: no-repeat;
 }
 
 .sidebar {
