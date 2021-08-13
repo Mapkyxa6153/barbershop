@@ -101,7 +101,7 @@ nav.navbar .btn-box {
   display: flex;
 }
 .nav-links li {
-  margin: 0 40px;
+  margin-left: 40px;
 }
 a.nav-link {
   font-weight: 600;
