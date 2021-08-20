@@ -280,6 +280,8 @@ p.section-description {
   height: 44px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   justify-content: center;
   background-color: #ffffff;
   border-radius: 50%;
@@ -291,6 +293,30 @@ p.section-description {
 .master-social-link:hover svg,
 .master-social-link:focus svg {
   fill: var(--primary-color);
+}
+.master-social-link:hover::before {
+  transform: translateY(-50px);
+}
+.master-social-link:hover::after {
+  transform: translateY(0px);
+}
+
+.master-social-link.inst::before,
+.master-social-link.inst::after {
+  background-image: url(../images/icons/instagram.svg);
+}
+.master-social-link::before,
+.master-social-link::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform, 250ms linear;
+}
+.master-social-link::after {
+  transform: translateY(50px);
 }
 
 .master-list {
@@ -332,6 +358,9 @@ p.section-description {
 }
 .gallery-card:hover .gallery-description {
   transform: translateY(-100%);
+}
+.gallery-img {
+  height: 100%;
 }
 
 /* footer styles */
@@ -401,20 +430,48 @@ p.section-description {
   height: inherit;
   color: var(--text-secondary);
 }
-
+.footer-form {
+  color: rgba(157, 164, 189, 0.4);
+}
 .footer-form .form-field {
   background-color: transparent;
-  color: #ffffff;
+  color: rgba(157, 164, 189, 0.4);
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-color, 250ms linear;
+
+  outline: none;
 }
 .footer-form .field-label {
   position: relative;
   display: inline-block;
 }
+.footer-form .field-label legend {
+  transition: translate, 250ms linear;
+  position: absolute;
+  top: 0;
+}
+.footer-form .form-field:focus + legend {
+  transform: translateY(-25px);
+  color: #ffff;
+}
+.field-label:hover .form-field {
+  border-color: #ffff;
+}
+.field-label:hover legend,
+.field-label:focus legend,
+.footer-form .form-field:focus {
+  color: #ffffff;
+  border-color: #ffffff;
+}
 
-textarea {
+textarea .form-field {
+  display: block;
+  width: 100%;
   resize: none;
+}
+textarea .form-field::placeholder {
+  color: rgba(157, 164, 189, 0.4);
 }
 .copyright {
   width: 100%;
