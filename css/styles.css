@@ -170,6 +170,8 @@ p.section-description {
   box-sizing: border-box;
   border-radius: 25px;
   padding: 12px 20px;
+  background-color: transparent;
+  cursor: pointer;
 }
 .primary-btn.darken {
   color: var(--text-primary);
@@ -352,13 +354,16 @@ p.section-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: var(--text-secondary);
 }
 .contacts-box {
   padding-left: 50px;
 }
 .contacts-box > address {
   position: relative;
+  font-style: normal;
+}
+.contacts-box > a {
+  display: block;
 }
 .contacts-box > address::before,
 .contacts-box > a::before {
@@ -367,7 +372,13 @@ p.section-description {
   width: 24px;
   height: 24px;
   left: -40px;
-  top: 7px;
+  top: 4px;
+}
+.contacts-item {
+  margin-bottom: 20px;
+}
+.contacts-item:last-child {
+  margin-bottom: 70px;
 }
 .contacts-box > address::before {
   background-image: url(../images/icons/map-pin.svg);
@@ -387,9 +398,24 @@ p.section-description {
 .footer-form,
 .footer-contacts {
   width: 50%;
-  height: auto;
+  height: inherit;
+  color: var(--text-secondary);
 }
 
+.footer-form .form-field {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+.footer-form .field-label {
+  position: relative;
+  display: inline-block;
+}
+
+textarea {
+  resize: none;
+}
 .copyright {
   width: 100%;
   min-height: 125px;
