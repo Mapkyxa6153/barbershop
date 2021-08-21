@@ -208,6 +208,7 @@ p.section-description {
 }
 .price-box {
   display: flex;
+  margin-bottom: 30px;
 }
 .price-list:nth-child(odd) {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -341,10 +342,12 @@ p.section-description {
 .imgage-gallery {
   display: flex;
   justify-content: space-between;
+  margin-top: 44px;
 }
 .gallery-card {
   position: relative;
   overflow: hidden;
+  width: 20%;
 }
 .gallery-description {
   position: absolute;
@@ -361,6 +364,7 @@ p.section-description {
 }
 .gallery-img {
   height: 100%;
+  width: 100%;
 }
 
 /* footer styles */
@@ -431,9 +435,19 @@ p.section-description {
   color: var(--text-secondary);
 }
 .footer-form {
+  padding-right: 50px;
+  margin-top: 130px;
   color: rgba(157, 164, 189, 0.4);
 }
+.footer-form-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer-form .form-field {
+  width: 100%;
+  margin-bottom: 44px;
   background-color: transparent;
   color: rgba(157, 164, 189, 0.4);
   border: none;
@@ -443,6 +457,8 @@ p.section-description {
   outline: none;
 }
 .footer-form .field-label {
+  width: calc(50% - 15px);
+
   position: relative;
   display: inline-block;
 }
@@ -450,6 +466,9 @@ p.section-description {
   transition: translate, 250ms linear;
   position: absolute;
   top: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
 }
 .footer-form .form-field:focus + legend {
   transform: translateY(-25px);
@@ -465,13 +484,16 @@ p.section-description {
   border-color: #ffffff;
 }
 
-textarea .form-field {
+textarea.form-field {
   display: block;
   width: 100%;
   resize: none;
+  font-family: 'Open Sans', sans-serif;
 }
-textarea .form-field::placeholder {
+textarea.form-field::placeholder {
   color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 .copyright {
   width: 100%;
