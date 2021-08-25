@@ -1,0 +1,45 @@
+.suptitle-primary,
+.suptitle-secondary {
+  color: $text-primary;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.suptitle-secondary {
+  color: #9da4bd99;
+}
+.suptitle-primary::before,
+.suptitle-secondary::before {
+  width: 60px;
+  height: 1px;
+  background: #9da4bd99;
+  content: '';
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.suptitle-primary::before {
+  background: rgba(48, 48, 48, 1);
+}
+
+h2.section-title {
+  font-family: 'Raleway';
+  color: $text-primary;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+h2.section-title.lighten {
+  color: #ffffff;
+}
+
+.description-container {
+  width: 48%;
+}
+p.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-primary-lighten;
+}

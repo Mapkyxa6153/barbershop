@@ -1,0 +1,72 @@
+/* Masters styles here */
+.master-box {
+  background-color: rgba(247, 247, 247, 1);
+}
+.master-social-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 90px;
+  margin-top: 30px;
+}
+.master-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.master-social-link svg {
+  height: 20px;
+  fill: rgba(48, 48, 48, 1);
+}
+.master-social-link:hover svg,
+.master-social-link:focus svg {
+  fill: $primary-color;
+}
+.master-social-link:hover::before {
+  transform: translateY(-50px);
+}
+.master-social-link:hover::after {
+  transform: translateY(0px);
+}
+
+.master-social-link.inst::before,
+.master-social-link.inst::after {
+  background-image: url(../images/icons/instagram.svg);
+}
+.master-social-link::before,
+.master-social-link::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform, 250ms linear;
+}
+.master-social-link::after {
+  transform: translateY(50px);
+}
+
+.master-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 300px;
+  text-align: center;
+}
+
+.master-card p {
+  font-size: 18px;
+  line-height: 25px;
+  color: $text-primary;
+}
+.master-card span {
+  font-size: 14px;
+  line-height: 19px;
+  color: $primary-color;
+}

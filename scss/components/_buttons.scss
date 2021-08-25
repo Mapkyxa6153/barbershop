@@ -1,0 +1,23 @@
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: $text-primary;
+}
+
+.primary-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.primary-btn.darken {
+  color: $text-primary;
+}

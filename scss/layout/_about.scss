@@ -1,0 +1,18 @@
+/* Main styles here */
+.section-box {
+  width: 100%;
+  padding: 130px 55px;
+}
+.about-section,
+.why-us {
+  display: flex;
+  justify-content: space-between;
+}
+.about_image-box {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+}
+.about_image-box img {
+  width: 48%;
+}

@@ -1,0 +1,72 @@
+.hero-description {
+  color: $text-secondary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* navbar section */
+nav.navbar {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 30px 55px 0 55px;
+  box-sizing: border-box;
+}
+.logo-img {
+  width: 68px;
+  height: 56px;
+  fill: rgba(48, 48, 48, 1);
+  animation-name: infiniteRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.nav-holder {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-links li {
+  margin-left: 40px;
+}
+a.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+a.nav-link:hover,
+.social-link:hover {
+  color: $primary-color;
+}
+
+/* slider */
+.slider {
+  width: calc(100% - 155px);
+  background-image: linear-gradient(145deg, #00000038, #00000091), url(../images/slider/slider3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+// sidebar
+.sidebar {
+  width: 155px;
+  height: 100vh;
+  background-color: #ffffff;
+}
