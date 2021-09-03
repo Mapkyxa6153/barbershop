@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 
@@ -39,6 +39,7 @@ a {
             transform: rotate(360deg);
   }
 }
+
 .suptitle-primary,
 .suptitle-secondary {
   color: #303030;
@@ -56,7 +57,7 @@ a {
   width: 60px;
   height: 1px;
   background: #9da4bd99;
-  content: "";
+  content: '';
   display: inline-block;
   margin-right: 20px;
   vertical-align: middle;
@@ -67,7 +68,7 @@ a {
 }
 
 h2.section-title {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   color: #303030;
   font-weight: 700;
   font-size: 42px;
@@ -199,12 +200,67 @@ a.nav-link:hover,
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slide {
+  padding-left: 100px;
+}
+
+.slider .slide .suptitle-secondary {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.slider .slide h1.hero-title {
+  color: #fff;
+  font-size: 10em;
+  font-weight: bold;
+  margin: 20px 0 20px -12px;
+}
+
+.slider .slide p.hero-description {
+  color: #9da4bd;
+  font-size: 2em;
+  margin: 10px 0;
 }
 
 .sidebar {
   width: 155px;
   height: 100vh;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar .social-box {
+  position: relative;
+  margin: 0;
+  -webkit-transform: rotate(-90deg) translateX(190px);
+          transform: rotate(-90deg) translateX(190px);
+}
+
+.sidebar .social-box::before {
+  position: absolute;
+  left: -90px;
+  top: 11px;
+  background: #303030;
+}
+
+.sidebar .social-box a {
+  margin-right: 20px;
 }
 
 /* Main styles here */
@@ -397,7 +453,7 @@ a.nav-link:hover,
 
 .master-social-link::before,
 .master-social-link::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 24px;
   height: 24px;
@@ -459,7 +515,7 @@ a.nav-link:hover,
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
   color: #ffffff;
   padding: 20px;
   bottom: -100%;
@@ -517,7 +573,7 @@ a.nav-link:hover,
 
 .contacts-box > address::before,
 .contacts-box > a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 24px;
   height: 24px;
@@ -623,37 +679,31 @@ textarea.form-field {
   display: block;
   width: 100%;
   resize: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea.form-field::-webkit-input-placeholder {
   color: rgba(157, 164, 189, 0.4);
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-}
-
-textarea.form-field::-moz-placeholder {
-  color: rgba(157, 164, 189, 0.4);
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea.form-field:-ms-input-placeholder {
   color: rgba(157, 164, 189, 0.4);
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea.form-field::-ms-input-placeholder {
   color: rgba(157, 164, 189, 0.4);
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea.form-field::placeholder {
   color: rgba(157, 164, 189, 0.4);
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .copyright {
@@ -671,3 +721,4 @@ textarea.form-field::placeholder {
           align-items: center;
   padding: 0 55px;
 }
+/*# sourceMappingURL=main.css.map */

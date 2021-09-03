@@ -63,10 +63,49 @@ a.nav-link:hover,
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+
+  .slide {
+    padding-left: 100px;
+    .suptitle-secondary {
+      text-transform: uppercase;
+      font-size: 1em;
+    }
+    h1.hero-title {
+      color: #fff;
+      font-size: 10em;
+      font-weight: bold;
+      margin: 20px 0 20px -12px;
+    }
+    p.hero-description {
+      color: map-get($colors, 'text-secondary');
+      font-size: 2em;
+      margin: 10px 0;
+    }
+  }
 }
 // sidebar
 .sidebar {
   width: 155px;
   height: 100vh;
   background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .social-box {
+    position: relative;
+    margin: 0;
+    transform: rotate(-90deg) translateX(190px);
+    &::before {
+      position: absolute;
+      left: -90px;
+      top: 11px;
+      background: rgba(48, 48, 48, 1);
+    }
+    a {
+      margin-right: 20px;
+    }
+  }
 }
